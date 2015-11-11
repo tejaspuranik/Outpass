@@ -1,0 +1,2 @@
+[Sun Oct 25 2015 12:50:12 GMT-0400 (EDT)] layer "+ 1200px": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Sun Oct 25 2015 12:48:15 GMT-0400 (EDT)] layer "complete over.png copy": Expected end of input but "c" found.

@@ -1,0 +1,293 @@
+html, body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #252626;
+    overflow-x: hidden !important;
+    width: auto !important;
+}
+
+p, div, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    line-height:2;
+}
+
+
+
+.black-transp-bg {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.white-bg {
+    background-color: #FFFFFF;
+}
+
+.img-small {
+    height: 100%;
+    width: 100%;
+}
+
+.small-panel-img {
+    height: 50%;
+    padding: 40px;
+}
+
+.img-arrow-down {
+    width: 10%;
+}
+
+.partner-panel {
+    background-color: #ffffff;
+    box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.15);;
+    padding: 0px;
+    margin: 8px;
+    width: 100%;
+}
+
+.partner-panel-number {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    padding: 0px;
+    color: #f4f4f4;
+}
+
+.partner-panel-text {
+    height: 64px;
+    text-align: left;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.small-panel {
+    min-height: 192px;
+    padding: 4px!important;
+}
+
+.small-panel p {
+    margin: 4px;
+}
+
+.text-red {
+    color: #f94646;
+}
+
+.media-object {
+    width: 64px;
+}
+
+.whitehover {
+    color: #f4f4f4;
+}
+.whitehover:hover, .whitehover:active {
+    color: #f94646 !important;
+    outline: none;
+}
+
+.whitehover:focus {
+    outline: none;
+    color: #f4f4f4;
+}
+
+.navbar.transparent.navbar-inverse {
+    opacity: 0.9;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar-brand {
+    height: 50px;
+    padding-top: 0px;
+}
+
+.img-nav {
+    height:45px;
+    padding-top:5px;
+}
+
+.navbar-btn {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 36px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.logo-md {
+    width: 40%;
+    padding-bottom: 20px;
+}
+
+.white-text {
+    color: #f4f4f4;
+}
+
+.gray-text {
+    color: #9D9D9C;
+}
+
+.list-icons {
+    width: 10%;
+    padding-left:-10em;
+}
+
+
+
+.bg-red-grad {
+    background: -webkit-linear-gradient(left, #f94646, #ff6d40); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f94646, #ff6d40); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f94646, #ff6d40); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f94646, #ff6d40); /* Standard syntax */
+}
+
+.img-phone {
+    padding-left: 10%;
+}
+
+.row {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+
+.row.mainRow {
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+.col-extra-margin {
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.extra-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#video-container {
+    position: absolute;
+}
+#video-container {
+    top:0%;
+    left:0%;
+    min-height:100%;
+    min-width:100%;
+    overflow: hidden;
+    background-color: black;
+    z-index: -200;
+
+}
+video {
+    position:absolute;
+    z-index:-100;
+    opacity: 0.5;
+}
+video.fillWidth {
+
+    min-width:100%;
+    min-height: 100%;
+
+}
+
+.mainContainer {
+    z-index: 0;
+    background-color: #f4f4f4;
+    padding: 0;
+}
+
+.btn-red-bg  {
+    background-color: #f94646;
+    color: #f4f4f4;
+    border-radius: 3px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.btn-white-bg  {
+    background-color: #f4f4f4;
+    color: #9D9D9C;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #D6D6D6;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.btn-transparent-bg  {
+    background-color: transparent;
+    color: #9D9D9C;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #D6D6D6;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.valign-table {
+    display: table;
+    table-layout: fixed;
+
+}
+.valign {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+}
+
+.valign-block {
+    float: none;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+@media (min-width: 768px ) {
+    .row {
+        position: relative;
+    }
+
+    .bottom-align-text {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+/*Sections Sizing*/
+
+section {
+    padding-top:50px;
+    padding-bottom: 50px;
+
+}
+
+.intro-section {
+    background-color: black;
+    z-index:-10;
+    min-height: 100vh;
+    height: 100%;
+    opacity: 0.95;
+    padding-top: 5%;
+}
+
+.section-2 {
+    z-index: 0;
+}
+
+.signup-section {
+    min-height: 75vh;
+}
+
+
