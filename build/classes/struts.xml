@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+<struts>
+<include file="login.xml"></include>	
+
+	
+	<package name="login" namespace="/" extends="json-default">
+		<action name="register" class="outpass.struts.RegisterAction">
+			<result type="json">
+			</result>
+			</action>
+	</package>
+	<package name="default" namespace="/" extends="json-default">	
+    <action name="AngularAction" class="outpass.struts.AngularAction">
+        <result type="json">
+        
+        </result>
+    </action>
+</package>
+</struts>
