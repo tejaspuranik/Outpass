@@ -1,6 +1,9 @@
 function serverAccess($http, SERVER) {
     this.post = function(data, path) {
-        return $http.post(SERVER.url + path);
+        var postData = JSON.stringify({
+            data: [data]
+        });
+        return $http.post(SERVER.url + path, postData);
     }
 }
 
@@ -26,7 +29,8 @@ function ServerCtrl(serverAccess, SERVER, $scope) {
         self.postData({
             name: $scope.name,
             email: $scope.email,
-            feedback: $scope.feedback
+            feedback: $scope.feedback,
+            origin: 'user'
         }, SERVER.usrFeedbackPath);
     };
 
@@ -38,11 +42,12 @@ function ServerCtrl(serverAccess, SERVER, $scope) {
         }, SERVER.ptrSignUpPath);
     };
 
-    self.PartnerFeedBack = function() {
+    self.PartnerFeedback = function() {
         self.postData({
             name: $scope.name,
             email: $scope.email,
-            feedback: $scope.feedback
+            feedback: $scope.feedback,
+            origin: 'partner'
         }, SERVER.ptrFeedbackPath);
     };
 }

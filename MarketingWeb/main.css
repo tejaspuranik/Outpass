@@ -11,7 +11,13 @@ p, div, h1, h2, h3, h4, h5, h6 {
     line-height:2;
 }
 
+.btn {
+    height: 36px;
+}
 
+a.btn {
+    padding-top: 10px;
+}
 
 .black-transp-bg {
     background-color: rgba(0,0,0,0.5);
@@ -288,6 +294,10 @@ section {
 
 .signup-section {
     min-height: 75vh;
+}
+
+.section-partnerSignup {
+    min-height: 100vh;
 }
 
 
