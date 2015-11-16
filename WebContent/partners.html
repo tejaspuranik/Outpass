@@ -109,11 +109,11 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <p class="navbar-btn"><a class="btn btn-red-bg" href="#signup" role="button">Sign up now &raquo;</a></p>
+                    <p class="navbar-btn"><a class="btn btn-red-bg" href="#signup" role="button">Sign up now</a></p>
 
                 </li>
                 <li>
-                    <p class="navbar-btn"><button type="button" class="btn btn-transparent-bg whitehover" data-toggle="modal" data-target="#feedback">Give Feedback</button></p>
+                    <p class="navbar-btn"><button type="button" class="btn btn-transparent-bg whitehover" data-toggle="modal" data-target="#feedback">Talk to us</button></p>
 
                 </li>
             </ul>
@@ -138,7 +138,8 @@
         <div class="row mainRow section gray-text wow fadeIn">
             <div class="col-md-8 col-md-offset-2 text-center">
                 <div class="row">
-                    <img class="img-responsive center-block logo-md" src="assets/partner-logo.png"/>
+                    <img class="img-responsive center-block logo-md" src="assets/big-logo.png"/>
+                    <h2 class="subheading">Partners</h2>
                 </div>
                 <div class="row black-transp-bg">
                     <div class="col-sm-6">
@@ -150,7 +151,7 @@
                         <p>Create, promote and manage all your events in one centralized platform.</p>
                     </div>
                     <div class="col-sm-6 col-sm-offset-3">
-                        <p><br /><a class="btn btn-red-bg center-block" href="#signup" role="button">Sign up and Get Early Access &raquo;</a></p>
+                        <p><br /><a class="btn btn-red-bg center-block" href="#signup" role="button">Get Early Access</a></p>
                     </div>
                 </div>
                 <a class="whitehover" href="#scrolldown"><img class="img-arrow-down" src="assets/arrow-down.png"></a>
@@ -176,7 +177,7 @@
                                 </a>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">Freshen up your image</h4>
+                                <h4 class="media-heading">Increase your reach</h4>
                                 <p>Promote your events to everyone in the city with just a click, all while attracting the right customers that fit your brand image.</p>
                             </div>
                         </div>
@@ -185,12 +186,13 @@
                         <div class="media">
                             <div class="media-left">
                                 <a href="#">
-                                    <img class="media-object" src="assets/freshen.png" alt="...">
+                                    <img class="media-object" src="assets/NEVER%20MISS.png" alt="...">
                                 </a>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">Gain insight</h4>
-                                <p>Joining the OutPass community means becoming part of a local lifestyle movement. Customize your event and venue pages to attract the right crows!</p>
+
+                                <h4 class="media-heading">Freshen up your image</h4>
+                                <p>Joining the OutPass community means becoming part of a local lifestyle movement. Customize the beautifully designed event pages to make your next party look exactly like it should.</p>
                             </div>
                         </div>
                     </div>
@@ -202,7 +204,8 @@
                                 </a>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">Increase your reach</h4>
+
+                                <h4 class="media-heading">Gain insight</h4>
                                 <p>Our OutPass Reports help gain valuable insight into financial performance of each event, as well as customer metrics and analysis to help you optimize your marketing strategies.</p>
                             </div>
                         </div>
@@ -264,7 +267,7 @@
                             <h2>5</h2>
                         </div>
                         <div class="valign col-xs-9 partner-panel-text">
-                            Gain insight through your personalised dashboard.
+                            Gain business insight through your personalised dashboard.
 
                         </div>
                     </div>
@@ -314,10 +317,8 @@
         <a name="signup"></a>
         <div class="row mainRow">
             <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 extra-padding">
-                <h1>Sign up now</h1>
-                <p>OutPass works directly with top industry partners to bring the best nightlife experiences
-                    to all. If you are a venue manager or an event promoter get in touch now to benefit from
-                    our unique program.</p>
+                <h1>Become a partner</h1>
+                <p class="lead">Please fill out the form below and we'll be in touch.</p>
                 <div class="row mainRow">
                     <div ng-controller="ServerCtrl as ctrl">
                         <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
@@ -329,10 +330,10 @@
                                     <input type="email" ng-model="email" class="form-control" placeholder="Email address" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" ng-model="employment" class="form-control" placeholder="What is your employment?" />
+                                    <input type="text" ng-model="employment" class="form-control" placeholder="Organization" />
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" ng-disabled="form$invalid || form$pristine" ng-click="ctrl.PartnerSignup()" class="btn btn-red-bg btn-small">Get with the program</button>
+                                    <button type="submit" ng-disabled="form$invalid || form$pristine" ng-click="ctrl.PartnerSignup()" class="btn btn-red-bg btn-small">Get early access</button>
                                 </div>
                             </form>
                             <p class="lead wow fadeInUp" ng-show="ctrl.hasSubmitted">Thank you for signing up, {{ name }}! You'll hear from us soon :)</p>
@@ -354,7 +355,7 @@
             <div ng-controller="ServerCtrl as ctrl">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Give feedback</h4>
+                    <h4 class="modal-title" id="myModalLabel">Talk to us</h4>
                 </div>
                 <div class="modal-body">
                     <form name="form" ng-hide="ctrl.hasSubmitted">
