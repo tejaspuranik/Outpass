@@ -6,15 +6,31 @@
 <struts>
 
 
-<package name="loginpartner" namespace="/" extends="struts-default">
+<package name="loginpartner" namespace="/" extends="json-default">
+<interceptors>
+		<interceptor-stack name="defaultStack">
+			<interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+			</interceptor-ref>
+		</interceptor-stack>
+	</interceptors>
 		<action name="registerPartner" class="outpass.struts.RegisterPartnerAction">
-			<result name="success">/success.jsp</result>
+			<result type="json">
+			</result>
 			</action>
 	</package>
 	
-<package name="feedback" namespace="/" extends="struts-default">
+<package name="feedback" namespace="/" extends="json-default">
+<interceptors>
+		<interceptor-stack name="defaultStack">
+			<interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+			</interceptor-ref>
+		</interceptor-stack>
+	</interceptors>
 		<action name="feedback" class="outpass.struts.FeedbackAction">
-			<result name="success">/success.jsp</result>
+			<result type="json">
+			</result>
 			</action>
 	</package>
 

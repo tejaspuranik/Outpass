@@ -27,9 +27,9 @@ function ServerCtrl(serverAccess, SERVER, $scope) {
 
     self.UserFeedback = function() {
         self.postData({
-            name: $scope.name,
+            fullname: $scope.fullname,
             email: $scope.email,
-            feedback: $scope.feedback,
+            message: $scope.message,
             origin: 'user'
         }, SERVER.usrFeedbackPath);
     };
@@ -44,9 +44,9 @@ function ServerCtrl(serverAccess, SERVER, $scope) {
 
     self.PartnerFeedback = function() {
         self.postData({
-            name: $scope.name,
+            fullname: $scope.fullname,
             email: $scope.email,
-            feedback: $scope.feedback,
+            message: $scope.message,
             origin: 'partner'
         }, SERVER.ptrFeedbackPath);
     };
@@ -61,8 +61,8 @@ angular.module('App', [])
         //enter server address
         url: 'http://localhost',
         //paths
-        usrSignUpPath: '',
-        usrFeedbackPath: '',
+        usrSignUpPath: 'register',
+        usrFeedbackPath: 'feedback',
         ptrSignUpPath: '',
         ptrFeedbackPath: ''
 

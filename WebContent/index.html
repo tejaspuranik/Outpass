@@ -272,7 +272,7 @@
                         <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
                             <form name="form" ng-hide="ctrl.hasSubmitted">
                                 <div class="form-group">
-                                    <input type="text" ng-model="name" class="form-control" placeholder="Full name" />
+                                    <input type="text" ng-model="fullname" class="form-control" placeholder="Full name" />
                                 </div>
                                 <div class="form-group">
                                     <input type="email" ng-model="email" class="form-control" placeholder="Email address" />
@@ -306,13 +306,13 @@
                 <div class="modal-body">
                     <form name="form" ng-hide="ctrl.hasSubmitted">
                         <div class="form-group">
-                            <input type="text" ng-model="name" class="form-control" placeholder="Full name" />
+                            <input type="text" ng-model="fullname" class="form-control" placeholder="Full name" />
                         </div>
                         <div class="form-group">
                             <input type="email" ng-model="email" class="form-control" placeholder="Email address" />
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" ng-model="feedback" placeholder="Message"></textarea>
+                            <textarea class="form-control" ng-model="message" placeholder="Message"></textarea>
                         </div>
                     </form>
                     <p ng-show="ctrl.hasSubmitted" class="wow fadeInUp"> Thank you for your feedback, {{ name }}! Out team might contact you soon for further enquiries.</p>

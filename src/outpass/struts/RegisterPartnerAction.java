@@ -1,7 +1,10 @@
 package outpass.struts;
 
+import java.util.List;
+
 import org.apache.commons.lang3.StringUtils;
 
+import outpass.model.Feedback;
 import outpass.model.Partner;
 import outpass.service.RegisterPartnerService;
 
@@ -11,6 +14,15 @@ import com.opensymphony.xwork2.ModelDriven;
 
 public class RegisterPartnerAction extends ActionSupport implements ModelDriven{
 	private static String SUCCESS="success";
+	private List<Partner> data;
+	public List<Partner> getData() {
+		return data;
+	}
+
+	public void setData(List<Partner> data) {
+		this.data = data;
+	}
+
 	private Partner partner = new Partner();
 	
 	public Partner getPartner() {
@@ -40,6 +52,12 @@ public class RegisterPartnerAction extends ActionSupport implements ModelDriven{
 	
 	public String execute()
 	{
+		if(data.size()>0)
+		{
+			partner.setEmail(data.get(0).getEmail());
+			partner.setFullname((data.get(0).getFullname()));
+			partner.setOrganization((data.get(0).getOrganization()));
+		}
 		RegisterPartnerService registerService = new RegisterPartnerService();
 		if(registerService.verifyRegister(partner))
 		{

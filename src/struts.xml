@@ -5,9 +5,15 @@
     
 <struts>
 <include file="login.xml"></include>	
-
 	
 	<package name="login" namespace="/" extends="json-default">
+	<interceptors>
+		<interceptor-stack name="defaultStack">
+			<interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+			</interceptor-ref>
+		</interceptor-stack>
+	</interceptors>
 		<action name="register" class="outpass.struts.RegisterAction">
 			<result type="json">
 			</result>
