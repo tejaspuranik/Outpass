@@ -59,7 +59,7 @@ angular.module('App', [])
     .controller('ServerCtrl', ServerCtrl)
     .constant('SERVER', {
         //enter server address
-        url: 'http://localhost',
+        url: 'http://localhost:8080/Outpass/',
         //paths
         usrSignUpPath: 'register',
         usrFeedbackPath: 'feedback',
