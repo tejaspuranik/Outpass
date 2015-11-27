@@ -127,7 +127,7 @@ a.btn {
 }
 
 .logo-md {
-    width: 75%;
+    width: 50%;
     padding-bottom: 0px;
 }
 
@@ -290,12 +290,11 @@ section {
 }
 
 .intro-section {
-    background-color: black;
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6) ), url('assets/bgd-intro.jpg');
+    background-size: cover;
     z-index:-10;
     min-height: 100vh;
     height: 100%;
-    opacity: 0.95;
-    padding-top: 5%;
 }
 
 .section-2 {
